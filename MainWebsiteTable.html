@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="style/MainWebsitePrayerTableStyle.css?v=2">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="/MainWebsitePullData.js?v=4"></script>
+  <div class="main">
+    <div id="clock"></div>
+    <div id="date"></div>
+    <br>
+    <table class="table table-striped" id="prayerTable">
+      <thead>
+        <tr id="header_row">
+          <th scope="col" class="salah_header">Salah</th>
+          <th scope="col">Start Time</th>
+          <th scope="col">Adhan</th>
+          <th scope="col">Iqamah</th>
+        </tr>
+      </thead>
+      <tr id="Fajr_row" class="table_row">
+        <td scope="row" class="salah_header">  Fajr</td>
+        <td id="Fajr_Start"></td>
+        <td id="Fajr_Adhan"></td>
+        <td id="Fajr_Iqama"></td>
+      </tr>
+      <tr id="Sunrise_row">
+        <td scope="row" class="salah_header">  Sunrise</td>
+        <td colspan="3" id="Sunrise"></td>
+      </tr>
+      <tr id="Zawal_row" class="table_row">
+        <td scope="row" class="salah_header"> Zawal</td>
+        <td colspan="3" id="Zawal"></td>
+      </tr>
+      <tr id="Zuhr_row" class="table_row">
+        <td scope="row" class="salah_header">  Zuhr</td>
+        <td id="Zuhr_Start"></td>
+        <td id="Zuhr_Adhan"></td>
+        <td id="Zuhr_Iqama"></td>
+      </tr>
+      <tr id="Asr_row" class="table_row">
+        <td scope="row" class="salah_header">Asr</td>
+        <td id="Asr_Start"></td>
+        <td id="Asr_Adhan"></td>
+        <td id="Asr_Iqama"></td>
+      </tr>
+      <tr id="Maghrib_row" class="table_row">
+        <td scope="row" class="salah_header"> Maghrib</td>
+        <td id="Maghrib_Start"></td>
+        <td id="Maghrib_Adhan"></td>
+        <td id="Maghrib_Iqama"></td>
+      </tr>
+      <tr id="Isha_row" class="table_row">
+        <td scope="row" class="salah_header"> Isha</td>
+        <td id="Isha_Start"></td>
+        <td id="Isha_Adhan"></td>
+        <td id="Isha_Iqama"></td>
+      </tr>
+    </table>
+    <table class="table table-striped" id="jumah_times">
+      <thead>
+        <tr id="jumah_header_row">
+          <th scope="col" class="jumah_header">Jumah</th>
+          <th scope="col">Start Time</th>
+          <th scope="col">Khutbah</th>
+        </tr>
+      </thead>
+      <tr id="jumah_1" class="table_row">
+        <td scope="row" class="jumah_header">Jumah 1</td>
+        <td id="Jumah_1_Start"></td>
+        <td id="Jumah_1_Khutbah"></td>
+      </tr>
+      <tr id="jumah_2">
+        <td scope="row" class="jumah_header">Jumah 2</td>
+        <td id="Jumah_2_Start"></td>
+        <td id="Jumah_2_Khutbah"></td>
+      </tr>
+    </table>
+    <div id="Time_change"></div>
+  </div>
+</body>

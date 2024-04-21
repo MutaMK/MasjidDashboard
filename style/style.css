@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Frank+Ruhl+Libre&family=Libre+Baskerville&display=swap');
+
+body {
+    font-family: frank ruhl libre;
+    background: linear-gradient(0deg,
+            rgb(0 0 0/80%),
+            rgb(50 70 7/90%)),
+        url(backround.jpg);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    zoom: 120%
+}
+
+.main {
+    width: 1100px;
+    margin: auto;
+}
+
+.time_table {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+#clock {
+    color: white;
+    text-align: center;
+    font-size: 6rem;
+    line-height: 1.2;
+}
+
+.title_line {
+    background-color: #606C38;
+    height: 2px;
+    border: 0;
+    margin: 1rem 0 1rem;
+}
+
+hr{
+    border-color: #606C38;
+}
+
+#Time_change {
+    color: #FF0202;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    background-color: transparent;
+    padding: 0 0.5rem 0;
+    border-radius: 0.25rem;
+}
+
+.table-dark-highlight {
+    background-color: #95ab6d !important; 
+}
+
+.mytable {
+    text-align: center;
+    font-size: 2rem;
+    border-collapse: collapse;
+    border-radius: 0.25rem;
+    border-spacing: 30px;
+    color: white;
+    background: transparent;
+    margin-right: 15px;
+    flex-grow: 10;
+}
+
+tr {
+    border: solid;
+    border-width: 1px 0;
+    border-collapse: collapse;
+    align-items: center;
+    border-color: #606C38;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+#header_row {
+    border-top: none;
+}
+
+th {
+    padding-bottom: 0.75rem;
+    padding-top: 0.5rem;
+    font-weight: 400;
+}
+
+td {
+    width: 25%;
+    padding: 0.3rem 0 0.3rem;
+}
+
+#jumah_titles {
+    text-align: center;
+    padding-top: 0.5rem
+}
+
+#jumah_times {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    font-size: 2rem;
+}
+
+#jumah_1 {
+    color: white;
+    text-align: left;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    background: transparent;
+    margin-bottom: 15px;
+    flex-grow: 1;
+    border-radius: 0.25rem;
+}
+
+#jumah_2 {
+    color: white;
+    text-align: left;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    background: transparent;
+    flex-grow: 1;
+    border-radius: 0.25rem;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+    vertical-align: top;
+}
+
+p {
+    margin: 0.5rem 0 0.5rem;
+}
+
+#date {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.salah_header {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+
+.masjid_logo {
+    width: 150px;
+    position: absolute;
+    /* left: calc(200px); */
+}
+
+#Jumah_1_Khutbah {
+    padding-left: 22.5px;
+}
+
+#Jumah_2_Khutbah {
+    padding-left: 22.5px;
+}
