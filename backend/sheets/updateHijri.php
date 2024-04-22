@@ -5,10 +5,16 @@
     $client->setApplicationName('Masjid Huzifia sheets');
     $client->setScopes([\Google_Service_Sheets::SPREADSHEETS]);
     $client->setAccessType('offline');
-    $client->setAuthConfig(__Dir__ . '/credentials.json');
+    // TODO : uncomment the below line once you have a real google sheet and real authentication 
+    // $client->setAuthConfig(__Dir__ . '/credentials.json');
+
+    // TODO: You can also use the api Key method instead. The below is just an example.
+    $apiKey = 'AIzaSyCC7JOnbjZY-3yFC9HJ8gmjkb7flGMGElg';
+    $client->setDeveloperKey($apiKey);
 
     $service = new Google_Service_Sheets($client);
-    $spreadsheetId = "TODO : Put yout google sheets id here";
+    // TODO : Put your google sheets id here
+    $spreadsheetId = "1RKmh4Cau3xclHTQQdT8t6jPkoEOXil8pZCmEXGDfGQg";
 
     $SHEET_NAME_IN_FILE = "hijriCal";
 
